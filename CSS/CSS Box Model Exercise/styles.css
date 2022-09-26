@@ -1,0 +1,20 @@
+.challenge {
+    width: 820px;
+    padding: 10px;
+    background-color: red;
+    font-size: 0;
+}
+
+.container {
+    display: inline-block;
+}
+
+.box {
+    font-size: 16px;
+    color: white;
+    width: 200px;
+    height: 80px;
+    background-color: blueviolet;
+    border: 10px solid orange;
+    box-sizing: border-box;
+}
