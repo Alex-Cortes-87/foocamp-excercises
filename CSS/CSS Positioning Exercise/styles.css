@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+}
+.main-container-trabajo{
+    width: 1010px;
+    border: 1px solid green;
+}
+
+.container {
+   position: sticky;
+   top: 0px;
+   left: 0px;
+   background-color:cornsilk;
+   padding: 10px;
+   border-top: 5px solid rgba(30, 130, 76, 0.25);
+}
+
+img{
+    width: 100%;
+}
+
+
+.leyenda{
+    background-color:lightseagreen;
+    color: white;
+    padding: 5px;
+    height:50px;
+    font-size: 20px;
+    align-content: center;
+}
+
+.social{
+    position: fixed;
+    top: 940px;
+    left: 850px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: -2px -5px rgba(29, 30, 31, 0.25);
+    width: 150px;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 5px;
+}
+
+.social > a{
+    grid-row: 1;
+    
+}
+
+.articulo-1 .leyenda{
+    position: relative;
+    top: -623px;
+    width: 30%; 
+}
+
+.articulo-2 .leyenda{
+    position: relative;
+    top: -355px;
+    width: 35%; 
+}
+
+.articulo-3 .leyenda{
+    position: relative;
+    top: -617px;
+    left: 632px;
+    width: 35%; 
+}
+
+.articulo-5 .leyenda{
+    position: relative;
+    top: -90px;
+    width: auto; 
+}
+
+.articulo-6 .leyenda{
+    position: relative;
+    top: -617px;
+    width: 30%; 
+}
+
+h1, h2, h3, p {
+    padding: 10px 0px 10px 0px;
+}
