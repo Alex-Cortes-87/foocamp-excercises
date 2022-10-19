@@ -1,0 +1,155 @@
+@keyframes roller_in {
+    from{transform: rotate(0deg);}
+    to{
+        transform: rotate(230deg);
+        background-color: #ff0065;
+    }  
+}
+
+@keyframes roller_out {
+  from{
+    transform: rotate(0deg);
+    background-color: #ff0065;
+  }
+  to{
+      transform: rotate(-270deg);
+      background-color: gray;
+  }  
+}
+
+@keyframes container_transparency {
+  0% {background-color: transparent;}
+  25% {background-color: rgba(128, 128, 128, 0.25);}
+  50% {background-color: rgba(128, 128, 128, 0.50);}
+  75% {background-color: rgba(128, 128, 128, 0.75);}
+  100% {background-color: rgba(128, 128, 128);}
+}
+
+@keyframes container_transparency_backwards {
+  0% {background-color: rgba(128, 128, 128);}
+  25% {background-color: rgba(128, 128, 128, 0.75);}
+  50% {background-color: rgba(128, 128, 128, 0.50);}
+  75% {background-color: rgba(128, 128, 128, 0.25);}
+  100% {background-color: transparent;}
+}
+
+.item--general {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #ff0065;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif ;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+
+  .dropbtn {
+    background-color: gray;
+    border: 0px;
+    animation: roller_out 0.5s ease-out forwards;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    border-radius: 40px;
+    padding: 15px 15px 15px 15px;
+    box-sizing: border-box;
+    animation: container_transparency_backwards 1s ease-out forwards;
+  }
+  
+  .dropdown-content {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 1;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  .item1 {
+    transform: translateY(-100%);
+    background-color: rgba(255, 0, 101, 0.5);
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  }
+
+  .item2 {
+    transform: translateY(-220%);
+    background-color: rgba(255, 0, 101, 0.5);
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  }
+
+  .item3 {
+    transform: translateY(-330%);
+    background-color: rgba(255, 0, 101, 0.5);
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  }
+
+  .item4 {
+    transform: translateY(-445%);
+    background-color: rgba(255, 0, 101, 0.5);
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  }
+
+  .item5 {
+    transform: translateY(-560%);
+    background-color: rgba(255, 0, 101, 0.5);
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    margin-bottom: 0px;
+}
+  
+  .dropdown:hover {
+    animation: container_transparency 1s ease-out forwards;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    max-height: 600px;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .dropdown:hover .dropbtn {
+    animation: roller_in 0.5s ease-out forwards;
+  }
+
+  .dropdown:hover .item1 {
+    background-color: #966919;
+    transform: translateY(0%);
+    transition: transform 0.5 s ease-in-out, background-color 0.5s ease-in-out;
+  }
+
+  .dropdown:hover .item2 {
+    background-color: #088f8f;
+    transform: translateY(0%);
+    transition: transform 0.5 s ease-in-out, background-color 0.5s ease-in-out;
+  }
+
+  .dropdown:hover .item3 {
+    background-color: #228b22;
+    transform: translateY(0%);
+    transition: transform 0.5 s ease-in-out, background-color 0.5s ease-in-out;
+  }
+
+  .dropdown:hover .item4 {
+    background-color: #d27d2d;
+    transform: translateY(0%);
+    transition: transform 0.5 s ease-in-out, background-color 0.5s ease-in-out;
+  }
+
+  .dropdown:hover .item5 {
+    background-color: #191970;
+    opacity:1;
+    transform: translateY(0%);
+    transition: transform 0.5 s ease-in-out, background-color 0.5 ease-in-out;
+  }
